@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  OC_D
+//
+//  Created by idea on 2018/3/24.
+//  Copyright © 2018年 idea. All rights reserved.
+//
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import <UIKit/UIKit.h>
+#import "ViewController.h"
+
+#define KSCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define KSCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+#define KSTATUSBARHEIGHT ([ViewController iPhoneX]?44.0:20.0)
+#define KNAVIGATIONANDSTATUSBARHEIGHT (KSTATUSBARHEIGHT+44.0)
+
+#define KTIMEOUT  5.0
+
+#endif /* PrefixHeader_pch */

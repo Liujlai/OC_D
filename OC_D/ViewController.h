@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic,strong)UIView *kview;
+@property(nonatomic,strong)UILabel *lab;
+@property(nonatomic,strong)UIButton *btn;
 
++ (BOOL)iPhoneX;
 @end
 
