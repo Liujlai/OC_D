@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6999EC165B7DD03111211AFD /* libPods-OC_D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0E9BF9EBCE6100EC0DE74D /* libPods-OC_D.a */; };
 		7836EB2A2065DD77001E63E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB292065DD77001E63E8 /* AppDelegate.m */; };
 		7836EB2D2065DD78001E63E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB2C2065DD77001E63E8 /* ViewController.m */; };
 		7836EB302065DD78001E63E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836EB2E2065DD78001E63E8 /* Main.storyboard */; };
@@ -14,9 +15,17 @@
 		7836EB352065DD78001E63E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836EB332065DD78001E63E8 /* LaunchScreen.storyboard */; };
 		7836EB382065DD78001E63E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB372065DD78001E63E8 /* main.m */; };
 		7836EB412065FE34001E63E8 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB402065FE34001E63E8 /* AViewController.m */; };
+		784D76F4206887D6006E6905 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76F3206887D6006E6905 /* CYLPlusButtonSubclass.m */; };
+		784D76F72068973F006E6905 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76F62068973F006E6905 /* HomeViewController.m */; };
+		784D76FA206898BE006E6905 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76F9206898BE006E6905 /* SecondViewController.m */; };
+		784D76FD206898FF006E6905 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76FC206898FF006E6905 /* ThirdViewController.m */; };
+		784D770020689916006E6905 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76FF20689916006E6905 /* MineViewController.m */; };
+		7885E71020665594004617AE /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885E70F20665594004617AE /* CYLTabBarControllerConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09824D1F5ADFCC4B6C8E81D7 /* Pods-OC_D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC_D.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC_D/Pods-OC_D.release.xcconfig"; sourceTree = "<group>"; };
+		14B876CC2A747E3843A18D22 /* Pods-OC_D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC_D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC_D/Pods-OC_D.debug.xcconfig"; sourceTree = "<group>"; };
 		7836EB252065DD77001E63E8 /* OC_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7836EB282065DD77001E63E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7836EB292065DD77001E63E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +39,19 @@
 		7836EB3E2065DE83001E63E8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7836EB3F2065FE34001E63E8 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		7836EB402065FE34001E63E8 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		784D76F2206887D6006E6905 /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
+		784D76F3206887D6006E6905 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
+		784D76F52068973F006E6905 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		784D76F62068973F006E6905 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		784D76F8206898BE006E6905 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		784D76F9206898BE006E6905 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		784D76FB206898FF006E6905 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		784D76FC206898FF006E6905 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		784D76FE20689916006E6905 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		784D76FF20689916006E6905 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		7885E70E20665594004617AE /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
+		7885E70F20665594004617AE /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
+		DF0E9BF9EBCE6100EC0DE74D /* libPods-OC_D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC_D.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6999EC165B7DD03111211AFD /* libPods-OC_D.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4802656525A0B59E0918B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E9BF9EBCE6100EC0DE74D /* libPods-OC_D.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7836EB1C2065DD77001E63E8 = {
 			isa = PBXGroup;
 			children = (
 				7836EB272065DD77001E63E8 /* OC_D */,
 				7836EB262065DD77001E63E8 /* Products */,
+				8E6C4AFFA2259FEE8F19FD13 /* Pods */,
+				3B4802656525A0B59E0918B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,13 +102,66 @@
 				7836EB2C2065DD77001E63E8 /* ViewController.m */,
 				7836EB3F2065FE34001E63E8 /* AViewController.h */,
 				7836EB402065FE34001E63E8 /* AViewController.m */,
+				784D770120689A43006E6905 /* Home */,
+				784D770320689A75006E6905 /* Second */,
+				784D770420689A8A006E6905 /* Third */,
+				784D770220689A58006E6905 /* Mine */,
 				7836EB2E2065DD78001E63E8 /* Main.storyboard */,
+				784D76F2206887D6006E6905 /* CYLPlusButtonSubclass.h */,
+				784D76F3206887D6006E6905 /* CYLPlusButtonSubclass.m */,
+				7885E70E20665594004617AE /* CYLTabBarControllerConfig.h */,
+				7885E70F20665594004617AE /* CYLTabBarControllerConfig.m */,
 				7836EB312065DD78001E63E8 /* Assets.xcassets */,
 				7836EB332065DD78001E63E8 /* LaunchScreen.storyboard */,
 				7836EB362065DD78001E63E8 /* Info.plist */,
 				7836EB372065DD78001E63E8 /* main.m */,
 			);
 			path = OC_D;
+			sourceTree = "<group>";
+		};
+		784D770120689A43006E6905 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				784D76F52068973F006E6905 /* HomeViewController.h */,
+				784D76F62068973F006E6905 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		784D770220689A58006E6905 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				784D76FE20689916006E6905 /* MineViewController.h */,
+				784D76FF20689916006E6905 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		784D770320689A75006E6905 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				784D76F8206898BE006E6905 /* SecondViewController.h */,
+				784D76F9206898BE006E6905 /* SecondViewController.m */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		784D770420689A8A006E6905 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				784D76FB206898FF006E6905 /* ThirdViewController.h */,
+				784D76FC206898FF006E6905 /* ThirdViewController.m */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		8E6C4AFFA2259FEE8F19FD13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14B876CC2A747E3843A18D22 /* Pods-OC_D.debug.xcconfig */,
+				09824D1F5ADFCC4B6C8E81D7 /* Pods-OC_D.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7836EB3B2065DD78001E63E8 /* Build configuration list for PBXNativeTarget "OC_D" */;
 			buildPhases = (
+				BC4DA6DE2EE96EF4BAB10884 /* [CP] Check Pods Manifest.lock */,
 				7836EB212065DD77001E63E8 /* Sources */,
 				7836EB222065DD77001E63E8 /* Frameworks */,
 				7836EB232065DD77001E63E8 /* Resources */,
+				85F172F00CA81F8E1FC59786 /* [CP] Embed Pods Frameworks */,
+				F3DA99F55FFE0A7039315DAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,15 +233,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85F172F00CA81F8E1FC59786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC_D/Pods-OC_D-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC4DA6DE2EE96EF4BAB10884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OC_D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DA99F55FFE0A7039315DAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC_D/Pods-OC_D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7836EB212065DD77001E63E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784D76F4206887D6006E6905 /* CYLPlusButtonSubclass.m in Sources */,
 				7836EB412065FE34001E63E8 /* AViewController.m in Sources */,
 				7836EB2D2065DD78001E63E8 /* ViewController.m in Sources */,
 				7836EB382065DD78001E63E8 /* main.m in Sources */,
+				784D76FA206898BE006E6905 /* SecondViewController.m in Sources */,
+				784D76FD206898FF006E6905 /* ThirdViewController.m in Sources */,
 				7836EB2A2065DD77001E63E8 /* AppDelegate.m in Sources */,
+				784D770020689916006E6905 /* MineViewController.m in Sources */,
+				784D76F72068973F006E6905 /* HomeViewController.m in Sources */,
+				7885E71020665594004617AE /* CYLTabBarControllerConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +430,7 @@
 		};
 		7836EB3C2065DD78001E63E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B876CC2A747E3843A18D22 /* Pods-OC_D.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +446,7 @@
 		};
 		7836EB3D2065DD78001E63E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09824D1F5ADFCC4B6C8E81D7 /* Pods-OC_D.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

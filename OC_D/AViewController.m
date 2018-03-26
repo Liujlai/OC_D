@@ -19,7 +19,7 @@
     _lab1 = [[UILabel alloc]init];
     _lab1.text = @"🧐";
     _lab1.font = [UIFont systemFontOfSize:32];
-//    [_lab1 sizeToFit];
+    //    [_lab1 sizeToFit];
     _lab1.textAlignment = NSTextAlignmentCenter;
     _lab1.frame = CGRectMake(0, KNAVIGATIONANDSTATUSBARHEIGHT, KSCREEN_WIDTH, 60);
     _lab1.backgroundColor = [UIColor orangeColor];
@@ -51,11 +51,11 @@
 
 -(UITableView *)table{
     if (!_table) {
-       _table = [[UITableView alloc]initWithFrame:CGRectMake(0,
-                                                             KNAVIGATIONANDSTATUSBARHEIGHT+130,
-                                                             KSCREEN_WIDTH,
-                                                             KSCREEN_HEIGHT-KNAVIGATIONANDSTATUSBARHEIGHT-130
-                                                             ) style:(UITableViewStylePlain)];
+        _table = [[UITableView alloc]initWithFrame:CGRectMake(0,
+                                                              KNAVIGATIONANDSTATUSBARHEIGHT+130,
+                                                              KSCREEN_WIDTH,
+                                                              KSCREEN_HEIGHT-KNAVIGATIONANDSTATUSBARHEIGHT-130
+                                                              ) style:(UITableViewStylePlain)];
         _table.delegate = self;
         _table.dataSource  = self;
         _table.showsVerticalScrollIndicator = NO;
