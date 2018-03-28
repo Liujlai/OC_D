@@ -100,8 +100,6 @@
 				7836EB3E2065DE83001E63E8 /* PrefixHeader.pch */,
 				7836EB2B2065DD77001E63E8 /* ViewController.h */,
 				7836EB2C2065DD77001E63E8 /* ViewController.m */,
-				7836EB3F2065FE34001E63E8 /* AViewController.h */,
-				7836EB402065FE34001E63E8 /* AViewController.m */,
 				784D770120689A43006E6905 /* Home */,
 				784D770320689A75006E6905 /* Second */,
 				784D770420689A8A006E6905 /* Third */,
@@ -122,6 +120,8 @@
 		784D770120689A43006E6905 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7836EB3F2065FE34001E63E8 /* AViewController.h */,
+				7836EB402065FE34001E63E8 /* AViewController.m */,
 				784D76F52068973F006E6905 /* HomeViewController.h */,
 				784D76F62068973F006E6905 /* HomeViewController.m */,
 			);

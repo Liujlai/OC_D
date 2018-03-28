@@ -7,6 +7,7 @@
 //
 
 #import "AViewController.h"
+#import "HomeViewController.h"
 
 @interface AViewController ()
 
@@ -16,12 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"首页";
     _lab1 = [[UILabel alloc]init];
     _lab1.text = @"🧐";
     _lab1.font = [UIFont systemFontOfSize:32];
     //    [_lab1 sizeToFit];
     _lab1.textAlignment = NSTextAlignmentCenter;
-    _lab1.frame = CGRectMake(0, KNAVIGATIONANDSTATUSBARHEIGHT, KSCREEN_WIDTH, 60);
+    _lab1.frame = CGRectMake(0,
+                             KNAVIGATIONANDSTATUSBARHEIGHT,
+                             KSCREEN_WIDTH,
+                             60);
     _lab1.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_lab1];
     // Do any additional setup after loading the view.
@@ -34,7 +39,10 @@
 -(void)setupBtnUI
 {
     _btn1 = [[UIButton alloc]init];
-    _btn1.frame = CGRectMake(0, KNAVIGATIONANDSTATUSBARHEIGHT+80, KSCREEN_WIDTH, 50);
+    _btn1.frame = CGRectMake(0,
+                             KNAVIGATIONANDSTATUSBARHEIGHT+80,
+                             KSCREEN_WIDTH,
+                             50);
     _btn1.backgroundColor = [UIColor purpleColor];
     [_btn1 addTarget:self action:@selector(click) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:_btn1];
@@ -77,5 +85,10 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"第%ld行",(long)indexPath.row];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HomeViewController *vc = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 @end

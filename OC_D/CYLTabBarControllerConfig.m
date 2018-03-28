@@ -24,6 +24,7 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
 @end
 
 #import "HomeViewController.h"
+#import "AViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "MineViewController.h"
@@ -59,7 +60,7 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
 }
 
 - (NSArray *)viewControllers {
-    HomeViewController *firstViewController = [[HomeViewController alloc] init];
+    AViewController *firstViewController = [[AViewController alloc] init];
     UIViewController *firstNavigationController = [[CYLBaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     

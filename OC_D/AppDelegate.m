@@ -159,7 +159,13 @@
     //需要实现的帧动画，这里根据需求自定义
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"transform.scale";
-    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation.values = @[@1.0,
+                         @1.3,
+                         @0.9,
+                         @1.15,
+                         @0.95,
+                         @1.02,
+                         @1.0];
     animation.duration = 1;
     animation.repeatCount = repeatCount;
     animation.calculationMode = kCAAnimationCubic;
