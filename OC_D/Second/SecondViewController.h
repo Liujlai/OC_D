@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
+@property(nonatomic,strong)UILabel *lab;
+@property(nonatomic,strong)UIView *kView;
+@property(nonatomic,strong)UIButton *Kbtn;
+@property(nonatomic,strong)UIImageView *kImg;
 
 @end

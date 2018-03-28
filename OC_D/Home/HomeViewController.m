@@ -26,7 +26,33 @@ static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_
     [self loadData1];
     [self loadDataCache];
     [self loadPostDataCache];
-    [self download];
+//    [self download];
+    
+    // 获取网络缓存大小
+    NSLog(@"网络缓存大小cache = %fKB",[PPNetworkCache getAllHttpCacheSize]/1024.f);
+    
+    // 清理缓存 [PPNetworkCache removeAllHttpCache];
+    
+    /**
+     设置网络请求参数的格式:默认为二进制格式
+     PPRequestSerializerJSON(JSON格式),
+     PPRequestSerializerHTTP(二进制格式)
+     
+     设置方式 : [PPNetworkHelper setRequestSerializer:PPRequestSerializerHTTP];
+     */
+    
+    /**
+     设置服务器响应数据格式:默认为JSON格式
+     PPResponseSerializerJSON(JSON格式),
+     PPResponseSerializerHTTP(二进制格式)
+     
+     设置方式 : [PPNetworkHelper setResponseSerializer:PPResponseSerializerJSON];
+     */
+    
+    /**
+     设置请求头 : [PPNetworkHelper setValue:@"value" forHTTPHeaderField:@"header"];
+     */
+    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self getCurrentNetworkStatus];

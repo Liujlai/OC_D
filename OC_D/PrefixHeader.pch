@@ -17,6 +17,8 @@
 #import <AFNetworking/AFNetworking.h>
 #import "CYLTabBarController.h"
 
+#import "NerdyUI.h"
+
 #import "PPNetworkHelper.h"
 
 
