@@ -22,6 +22,7 @@
         [self cleanCaches];
     });
     [self.view addSubview:_btn];
+    
     self.navigationItem.title = @"我的";
     
 
@@ -56,7 +57,10 @@
             });
         });
         
-        Alert.title(@"清理成功");
+        Alert.title(@"清理成功").action(@"🤥", ^{
+            self.btn.str(@"清除缓存---->%@",[self strSize]);
+        }).show();
+        
     }];
     [ac addAction:cancelAction];
     [ac addAction:ensureAction];
