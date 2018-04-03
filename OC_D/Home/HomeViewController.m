@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "Person.h"
+#import "Dog.h"
 static NSString *const dataUrl = @"https://idealjl.herokuapp.com/aaa";
 static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
 @interface HomeViewController ()
@@ -76,6 +78,10 @@ static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_
 {
     [PPNetworkHelper GET:dataUrl parameters:nil success:^(id responseObject) {
         NSLog(@"🦊%@",responseObject);
+//        NSString* json = [self jsonToString:responseObject];
+//        NSError *err = nil;
+//        Person *p = [[Person alloc] initWithString:json error:&err];
+//        NSLog(@"😶%@-----%d",p.name,p.id);
     } failure:^(NSError *error) {
          NSLog(@"err = %@",error);
     }];
@@ -85,6 +91,16 @@ static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_
 {
     [PPNetworkHelper GET:dataUrl parameters:nil responseCache:^(id responseCache) {
         NSLog(@"🐱%@",responseCache);
+        if(responseCache){
+            Dog *d = [Dog yy_modelWithJSON:responseCache];
+            NSArray * arr = [[NSArray alloc] init];
+            arr = @[d,d,d];
+            NSLog(@"%@--%lld",d.name,d.uid);
+            NSLog(@"🤫%@",arr);
+            NSLog(@"😶%@",arr[1]);
+            NSLog(@"🤢%@",arr[2]);
+        }
+
     } success:^(id responseObject) {
         NSLog(@"🐸%@",responseObject);
     } failure:^(NSError *error) {
@@ -97,6 +113,10 @@ static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_
 {
     [PPNetworkHelper POST:@"https://idealjl.herokuapp.com/json" parameters:nil responseCache:^(id responseCache) {
         NSLog(@"🐳%@",responseCache);
+//        NSString* json = [self jsonToString:responseCache];
+        NSError *err = nil;
+        Person *p = [[Person alloc] initWithDictionary:responseCache error:&err];
+        NSLog(@"🤫,%d---%@---%d",p.number,p.text,p.isbool);
     } success:^(id responseObject) {
         NSLog(@"👹%@",responseObject);
     } failure:^(NSError *error) {
@@ -136,14 +156,16 @@ static NSString *const downloadUrl = @"https://clips.vorwaerts-gmbh.de/big_buck_
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ *  json转字符串
+ */
+- (NSString *)jsonToString:(NSDictionary *)dic
+{
+    if(!dic){
+        return nil;
+    }
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
-*/
 
 @end

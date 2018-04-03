@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6999EC165B7DD03111211AFD /* libPods-OC_D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0E9BF9EBCE6100EC0DE74D /* libPods-OC_D.a */; };
+		78118B81207228AB00AF57C5 /* ThirdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78118B80207228AB00AF57C5 /* ThirdCell.m */; };
 		7836EB2A2065DD77001E63E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB292065DD77001E63E8 /* AppDelegate.m */; };
 		7836EB2D2065DD78001E63E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836EB2C2065DD77001E63E8 /* ViewController.m */; };
 		7836EB302065DD78001E63E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836EB2E2065DD78001E63E8 /* Main.storyboard */; };
@@ -20,12 +21,19 @@
 		784D76FA206898BE006E6905 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76F9206898BE006E6905 /* SecondViewController.m */; };
 		784D76FD206898FF006E6905 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76FC206898FF006E6905 /* ThirdViewController.m */; };
 		784D770020689916006E6905 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784D76FF20689916006E6905 /* MineViewController.m */; };
+		785B3003206CCB9700358AE6 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 785B3002206CCB9700358AE6 /* Student.m */; };
+		786BC3FA2073601E003054D0 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 786BC3F92073601E003054D0 /* BaseViewModel.m */; };
+		786BC3FE207364B6003054D0 /* ThirdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 786BC3FD207364B6003054D0 /* ThirdViewModel.m */; };
 		7885E71020665594004617AE /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885E70F20665594004617AE /* CYLTabBarControllerConfig.m */; };
+		78A87286206E194E002EB77B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A87285206E194E002EB77B /* Person.m */; };
+		78A87289206E2D24002EB77B /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A87288206E2D24002EB77B /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09824D1F5ADFCC4B6C8E81D7 /* Pods-OC_D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC_D.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC_D/Pods-OC_D.release.xcconfig"; sourceTree = "<group>"; };
 		14B876CC2A747E3843A18D22 /* Pods-OC_D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC_D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC_D/Pods-OC_D.debug.xcconfig"; sourceTree = "<group>"; };
+		78118B7F207228AB00AF57C5 /* ThirdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdCell.h; sourceTree = "<group>"; };
+		78118B80207228AB00AF57C5 /* ThirdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdCell.m; sourceTree = "<group>"; };
 		7836EB252065DD77001E63E8 /* OC_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7836EB282065DD77001E63E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7836EB292065DD77001E63E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,8 +57,18 @@
 		784D76FC206898FF006E6905 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		784D76FE20689916006E6905 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		784D76FF20689916006E6905 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		785B3001206CCB9700358AE6 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		785B3002206CCB9700358AE6 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		786BC3F82073601E003054D0 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		786BC3F92073601E003054D0 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		786BC3FC207364B6003054D0 /* ThirdViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewModel.h; sourceTree = "<group>"; };
+		786BC3FD207364B6003054D0 /* ThirdViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewModel.m; sourceTree = "<group>"; };
 		7885E70E20665594004617AE /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
 		7885E70F20665594004617AE /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
+		78A87284206E194E002EB77B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		78A87285206E194E002EB77B /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		78A87287206E2D24002EB77B /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		78A87288206E2D24002EB77B /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		DF0E9BF9EBCE6100EC0DE74D /* libPods-OC_D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC_D.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +118,7 @@
 				7836EB3E2065DE83001E63E8 /* PrefixHeader.pch */,
 				7836EB2B2065DD77001E63E8 /* ViewController.h */,
 				7836EB2C2065DD77001E63E8 /* ViewController.m */,
+				786BC3FB207363E5003054D0 /* ViewModel */,
 				784D770120689A43006E6905 /* Home */,
 				784D770320689A75006E6905 /* Second */,
 				784D770420689A8A006E6905 /* Third */,
@@ -124,6 +143,10 @@
 				7836EB402065FE34001E63E8 /* AViewController.m */,
 				784D76F52068973F006E6905 /* HomeViewController.h */,
 				784D76F62068973F006E6905 /* HomeViewController.m */,
+				78A87284206E194E002EB77B /* Person.h */,
+				78A87285206E194E002EB77B /* Person.m */,
+				78A87287206E2D24002EB77B /* Dog.h */,
+				78A87288206E2D24002EB77B /* Dog.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -142,6 +165,8 @@
 			children = (
 				784D76F8206898BE006E6905 /* SecondViewController.h */,
 				784D76F9206898BE006E6905 /* SecondViewController.m */,
+				785B3001206CCB9700358AE6 /* Student.h */,
+				785B3002206CCB9700358AE6 /* Student.m */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -151,8 +176,21 @@
 			children = (
 				784D76FB206898FF006E6905 /* ThirdViewController.h */,
 				784D76FC206898FF006E6905 /* ThirdViewController.m */,
+				78118B7F207228AB00AF57C5 /* ThirdCell.h */,
+				78118B80207228AB00AF57C5 /* ThirdCell.m */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		786BC3FB207363E5003054D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				786BC3F82073601E003054D0 /* BaseViewModel.h */,
+				786BC3F92073601E003054D0 /* BaseViewModel.m */,
+				786BC3FC207364B6003054D0 /* ThirdViewModel.h */,
+				786BC3FD207364B6003054D0 /* ThirdViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8E6C4AFFA2259FEE8F19FD13 /* Pods */ = {
@@ -273,9 +311,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OC_D/Pods-OC_D-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -289,16 +330,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785B3003206CCB9700358AE6 /* Student.m in Sources */,
+				78A87289206E2D24002EB77B /* Dog.m in Sources */,
+				786BC3FE207364B6003054D0 /* ThirdViewModel.m in Sources */,
 				784D76F4206887D6006E6905 /* CYLPlusButtonSubclass.m in Sources */,
 				7836EB412065FE34001E63E8 /* AViewController.m in Sources */,
+				786BC3FA2073601E003054D0 /* BaseViewModel.m in Sources */,
 				7836EB2D2065DD78001E63E8 /* ViewController.m in Sources */,
 				7836EB382065DD78001E63E8 /* main.m in Sources */,
 				784D76FA206898BE006E6905 /* SecondViewController.m in Sources */,
+				78A87286206E194E002EB77B /* Person.m in Sources */,
 				784D76FD206898FF006E6905 /* ThirdViewController.m in Sources */,
 				7836EB2A2065DD77001E63E8 /* AppDelegate.m in Sources */,
 				784D770020689916006E6905 /* MineViewController.m in Sources */,
 				784D76F72068973F006E6905 /* HomeViewController.m in Sources */,
 				7885E71020665594004617AE /* CYLTabBarControllerConfig.m in Sources */,
+				78118B81207228AB00AF57C5 /* ThirdCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

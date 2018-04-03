@@ -68,13 +68,22 @@
         _table.dataSource  = self;
         _table.showsVerticalScrollIndicator = NO;
         
+        
+        _table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            
+            [_table.mj_header endRefreshing];
+        }];
+        _table.mj_footer  = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+            
+            [_table.mj_footer endRefreshing];
+        }];
     }
     return _table;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 30;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

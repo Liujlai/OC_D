@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Student.h"
 
 @interface SecondViewController ()
 
@@ -16,10 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"SecondViewController";
     [self setupUI];
     _lab.onClick((^(UILabel *lab){
         //        Alert.title(@"提示").message(@"Message").action(@"OK",^{}).show();
+        Student *st = [Student new];
+        st -> _name = @"idea";
+        st -> _birthday.year = 2222;
+        st -> _birthday.month = 07;
+        st -> _birthday.day = 99;
+        [st say];
+        
+        Data d = {3333,22,33};
+        Data dd;
+        dd = d;
+        dd.year = 5555;
+        st.str = @"eeee";
+        NSLog(@"🤥%i---%@---%i",d.year,st.str,dd.year);
         Alert.title(@"提示")
         .message(@"提示提示提示提示提示提示.")
         .action(@"取消", nil)
